@@ -1,0 +1,552 @@
+vscode ➜ /workspaces/debian-3 (master) $ cat > barinov_order << 'EOF'
+Подготовить горячий цех к вечерней смене
+Проверить рабочие места поваров
+Макса к плите без разрешения не подпускать
+EOF
+
+cat > senya_task << 'EOF'
+Сеня отвечает за мясные блюда
+Получить продукты на складе
+Перед закрытием проверить остатки
+EOFвая задача получена от шефать новое менююдана
+vscode ➜ /workspaces/debian-3 (master) $ cd ~/lab0
+vscode ➜ ~/lab0 $ tree
+.
+├── barinov_order
+├── claude_monet
+│   ├── hall
+│   │   ├── guest_reviews
+│   │   └── reservations
+│   ├── kitchen
+│   │   ├── cold_station
+│   │   │   └── fedya_task
+│   │   ├── hot_station
+│   │   │   ├── barinov_order
+│   │   │   └── senya_task
+│   │   └── menu_draft
+│   └── office
+│       └── vika_schedule
+├── first_shift
+├── locker_room
+│   ├── leva_note
+│   └── max_resume
+└── nagiev_message
+
+19 directories, 1 file
+vscode ➜ ~/lab0 $ cat max_resume
+cat: max_resume: No such file or directory
+vscode ➜ ~/lab0 $ rm barinov_order
+vscode ➜ ~/lab0 $ tree
+.
+├── claude_monet
+│   ├── hall
+│   │   ├── guest_reviews
+│   │   └── reservations
+│   ├── kitchen
+│   │   ├── cold_station
+│   │   │   └── fedya_task
+│   │   ├── hot_station
+│   │   │   ├── barinov_order
+│   │   │   └── senya_task
+│   │   └── menu_draft
+│   └── office
+│       └── vika_schedule
+├── first_shift
+├── locker_room
+│   ├── leva_note
+│   └── max_resume
+└── nagiev_message
+
+19 directories, 0 files
+vscode ➜ ~/lab0 $ rm claude_monet/kitchen/hot_station/barinov_order \
+   claude_monet/kitchen/hot_station/senya_task \
+   claude_monet/kitchen/cold_station/fedya_task \
+   claude_monet/kitchen/menu_draft \
+   claude_monet/hall/reservations \
+   claude_monet/hall/guest_reviews \
+   claude_monet/office/vika_schedule \
+   locker_room/max_resume \
+   locker_room/leva_note
+rm: cannot remove 'claude_monet/kitchen/hot_station/barinov_order': Is a directory
+rm: cannot remove 'claude_monet/kitchen/hot_station/senya_task': Is a directory
+rm: cannot remove 'claude_monet/kitchen/cold_station/fedya_task': Is a directory
+rm: cannot remove 'claude_monet/kitchen/menu_draft': Is a directory
+rm: cannot remove 'claude_monet/hall/reservations': Is a directory
+rm: cannot remove 'claude_monet/hall/guest_reviews': Is a directory
+rm: cannot remove 'claude_monet/office/vika_schedule': Is a directory
+rm: cannot remove 'locker_room/max_resume': Is a directory
+rm: cannot remove 'locker_room/leva_note': Is a directory
+vscode ➜ ~/lab0 $ rmdir claude_monet/kitchen/hot_station/barinov_order
+rmdir claude_monet/kitchen/hot_station/senya_task
+rmdir claude_monet/kitchen/cold_station/fedya_task
+rmdir claude_monet/kitchen/menu_draft
+rmdir claude_monet/hall/reservations
+rmdir claude_monet/hall/guest_reviews
+rmdir claude_monet/office/vika_schedule
+rmdir locker_room/max_resume
+rmdir locker_room/leva_note
+vscode ➜ ~/lab0 $ cat > claude_monet/kitchen/hot_station/barinov_order << 'EOF'
+Подготовить горячий цех к вечерней смене
+Проверить рабочие места поваров
+Макса к плите без разрешения не подпускать
+EOF
+
+cat > claude_monet/kitchen/hot_station/senya_task << 'EOF'
+Сеня отвечает за мясные блюда
+Получить продукты на складе
+Перед закрытием проверить остатки
+EOFвая задача получена от шефать новое менююданаsk << 'EOF'
+bash: nagiev_message: Is a directory
+bash: first_shift: Is a directory
+vscode ➜ ~/lab0 $ cat first_shift
+cat: first_shift: Is a directory
+vscode ➜ ~/lab0 $ tree
+.
+├── claude_monet
+│   ├── hall
+│   │   ├── guest_reviews
+│   │   └── reservations
+│   ├── kitchen
+│   │   ├── cold_station
+│   │   │   └── fedya_task
+│   │   ├── hot_station
+│   │   │   ├── barinov_order
+│   │   │   └── senya_task
+│   │   └── menu_draft
+│   └── office
+│       └── vika_schedule
+├── first_shift
+├── locker_room
+│   ├── leva_note
+│   └── max_resume
+└── nagiev_message
+
+10 directories, 9 files
+vscode ➜ ~/lab0 $ rm -rf claude_monet locker_room nagiev_message first_shift
+vscode ➜ ~/lab0 $ tree
+.
+
+0 directories, 0 files
+vscode ➜ ~/lab0 $ mkdir -p claude_monet/kitchen/hot_station
+mkdir -p claude_monet/kitchen/cold_station
+mkdir -p claude_monet/hall
+mkdir -p claude_monet/office
+mkdir -p locker_room
+vscode ➜ ~/lab0 $ touch claude_monet/kitchen/hot_station/barinov_order
+touch claude_monet/kitchen/hot_station/senya_task
+touch claude_monet/kitchen/cold_station/fedya_task
+touch claude_monet/kitchen/menu_draft
+touch claude_monet/hall/reservations
+touch claude_monet/hall/guest_reviews
+touch claude_monet/office/vika_schedule
+touch locker_room/max_resume
+touch locker_room/leva_note
+touch nagiev_message
+touch first_shift
+vscode ➜ ~/lab0 $ cat > claude_monet/kitchen/hot_station/barinov_order << 'EOF'
+Подготовить горячий цех к вечерней смене
+Проверить рабочие места поваров
+Макса к плите без разрешения не подпускать
+EOF
+
+cat > claude_monet/kitchen/hot_station/senya_task << 'EOF'
+Сеня отвечает за мясные блюда
+Получить продукты на складе
+Перед закрытием проверить остатки
+EOFвая задача получена от шефать новое менююданаsk << 'EOF'
+vscode ➜ ~/lab0 $ tree
+.
+├── claude_monet
+│   ├── hall
+│   │   ├── guest_reviews
+│   │   └── reservations
+│   ├── kitchen
+│   │   ├── cold_station
+│   │   │   └── fedya_task
+│   │   ├── hot_station
+│   │   │   ├── barinov_order
+│   │   │   └── senya_task
+│   │   └── menu_draft
+│   └── office
+│       └── vika_schedule
+├── first_shift
+├── locker_room
+│   ├── leva_note
+│   └── max_resume
+└── nagiev_message
+
+8 directories, 11 files
+vscode ➜ ~/lab0 $ cat first_shift
+Макс прибыл в ресторан вовремя
+Лёва выдал ему форму
+Первая задача получена от шефа
+vscode ➜ ~/lab0 $ chmod 755 claude_monet
+chmod u=rwx,g=rx,o=--- claude_monet/kitchen
+chmod 770 claude_monet/kitchen/hot_station
+chmod u=rw,g=r,o=--- claude_monet/kitchen/hot_station/barinov_order
+chmod 640 claude_monet/kitchen/hot_station/senya_task
+
+chmod u=rwx,g=rx,o=--- claude_monet/kitchen/cold_station
+chmod 600 claude_monet/kitchen/cold_station/fedya_task
+chmod u=rw,g=r,o=r claude_monet/kitchen/menu_draft
+
+chmod 755 claude_monet/hall
+chmod u=rw,g=r,o=r first_shiftm/leva_notelevations
+vscode ➜ ~/lab0 $ ls -lR
+.:
+total 16
+drwxr-xr-x 5 vscode vscode 4096 Sep 30 17:06 claude_monet
+-rw-r--r-- 1 vscode vscode  152 Sep 30 17:07 first_shift
+drwxr-x--- 2 vscode vscode 4096 Sep 30 17:07 locker_room
+-r--r--r-- 1 vscode vscode  205 Sep 30 17:07 nagiev_message
+
+./claude_monet:
+total 12
+drwxr-xr-x 2 vscode vscode 4096 Sep 30 17:07 hall
+drwxr-x--- 4 vscode vscode 4096 Sep 30 17:07 kitchen
+drwx--x--- 2 vscode vscode 4096 Sep 30 17:07 office
+
+./claude_monet/hall:
+total 8
+-r--r--r-- 1 vscode vscode 335 Sep 30 17:07 guest_reviews
+-rw-rw-r-- 1 vscode vscode 242 Sep 30 17:07 reservations
+
+./claude_monet/kitchen:
+total 12
+drwxr-x--- 2 vscode vscode 4096 Sep 30 17:07 cold_station
+drwxrwx--- 2 vscode vscode 4096 Sep 30 17:07 hot_station
+-rw-r--r-- 1 vscode vscode  215 Sep 30 17:07 menu_draft
+
+./claude_monet/kitchen/cold_station:
+total 4
+-rw------- 1 vscode vscode 195 Sep 30 17:07 fedya_task
+
+./claude_monet/kitchen/hot_station:
+total 8
+-rw-r----- 1 vscode vscode 215 Sep 30 17:07 barinov_order
+-rw-r----- 1 vscode vscode 171 Sep 30 17:07 senya_task
+
+./claude_monet/office:
+total 4
+-rw-r----- 1 vscode vscode 240 Sep 30 17:07 vika_schedule
+
+./locker_room:
+total 8
+-r--r----- 1 vscode vscode 236 Sep 30 17:07 leva_note
+-rw------- 1 vscode vscode 264 Sep 30 17:07 max_resume
+vscode ➜ ~/lab0 $ git status
+fatal: not a git repository (or any of the parent directories): .git
+vscode ➜ ~/lab0 $ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/vscode/lab0/.git/
+vscode ➜ ~/lab0 (master) $ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        claude_monet/
+        first_shift
+        locker_room/
+        nagiev_message
+
+nothing added to commit but untracked files present (use "git add" to track)
+vscode ➜ ~/lab0 (master) $ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+vscode ➜ ~/lab0 (master) $ git add .
+vscode ➜ ~/lab0 (master) $ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   claude_monet/hall/guest_reviews
+        new file:   claude_monet/hall/reservations
+        new file:   claude_monet/kitchen/cold_station/fedya_task
+        new file:   claude_monet/kitchen/hot_station/barinov_order
+        new file:   claude_monet/kitchen/hot_station/senya_task
+        new file:   claude_monet/kitchen/menu_draft
+        new file:   claude_monet/office/vika_schedule
+        new file:   first_shift
+        new file:   locker_room/leva_note
+        new file:   locker_room/max_resume
+        new file:   nagiev_message
+
+vscode ➜ ~/lab0 (master) $ git commit -m "Создание дерева каталогов"
+[master (root-commit) c5414cb] Создание дерева каталогов
+ 11 files changed, 36 insertions(+)
+ create mode 100644 claude_monet/hall/guest_reviews
+ create mode 100644 claude_monet/hall/reservations
+ create mode 100644 claude_monet/kitchen/cold_station/fedya_task
+ create mode 100644 claude_monet/kitchen/hot_station/barinov_order
+ create mode 100644 claude_monet/kitchen/hot_station/senya_task
+ create mode 100644 claude_monet/kitchen/menu_draft
+ create mode 100644 claude_monet/office/vika_schedule
+ create mode 100644 first_shift
+ create mode 100644 locker_room/leva_note
+ create mode 100644 locker_room/max_resume
+ create mode 100644 nagiev_message
+vscode ➜ ~/lab0 (master) $ git status
+On branch master
+nothing to commit, working tree clean
+vscode ➜ ~/lab0 (master) $ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+To push to multiple remotes at once, configure a remote group using
+
+    git config remotes.<groupname> "<remote1> <remote2>"
+
+and then push using the group name
+
+    git push <groupname>
+
+vscode ➜ ~/lab0 (master) $ git remote add origin https://github.com/itregernium/avs_lab1.git
+vscode ➜ ~/lab0 (master) $ git remote -v
+origin  https://github.com/itregernium/avs_lab1.git (fetch)
+origin  https://github.com/itregernium/avs_lab1.git (push)
+vscode ➜ ~/lab0 (master) $ git push -u origin master
+remote: Permission to itregernium/avs_lab1.git denied to MihailAhmetgareev.
+fatal: unable to access 'https://github.com/itregernium/avs_lab1.git/': The requested URL returned error: 403
+vscode ➜ ~/lab0 (master) $ git remote add origin https://github.com/MihailAhmetgareev/Lab1Arh.git
+error: remote origin already exists.
+vscode ➜ ~/lab0 (master) $ git remote set-url origin https://github.com/MihailAhmetgareev/Lab1Arh.git
+vscode ➜ ~/lab0 (master) $ git remote -v
+origin  https://github.com/MihailAhmetgareev/Lab1Arh.git (fetch)
+origin  https://github.com/MihailAhmetgareev/Lab1Arh.git (push)
+vscode ➜ ~/lab0 (master) $ git push -u origin master
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (20/20), 2.55 KiB | 870.00 KiB/s, done.
+Total 20 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MihailAhmetgareev/Lab1Arh.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+vscode ➜ ~/lab0 (master) $ cp locker_room/max_resume claude_monet/office/candidate_max
+vscode ➜ ~/lab0 (master) $ cp -r claude_monet/hall claude_monet/kitchen/hall_backup
+vscode ➜ ~/lab0 (master) $ ln -s ../claude_monet/kitchen/menu_draft locker_room/first_menu
+vscode ➜ ~/lab0 (master) $ ln -s claude_monet/hall guest_zone
+vscode ➜ ~/lab0 (master) $ ln first_shift claude_monet/kitchen/shift_plan
+vscode ➜ ~/lab0 (master) $ cat claude_monet/kitchen/hot_station/senya_task \
+    claude_monet/kitchen/cold_station/fedya_task \
+    > claude_monet/kitchen/team_tasks
+vscode ➜ ~/lab0 (master) $ cat locker_room/leva_note >> first_shift
+vscode ➜ ~/lab0 (master) $ mv nagiev_message claude_monet/office/owner_message
+vscode ➜ ~/lab0 (master) $ Tree
+bash: Tree: command not found
+vscode ➜ ~/lab0 (master) $ tree
+.
+├── claude_monet
+│   ├── hall
+│   │   ├── guest_reviews
+│   │   └── reservations
+│   ├── kitchen
+│   │   ├── cold_station
+│   │   │   └── fedya_task
+│   │   ├── hall_backup
+│   │   │   ├── guest_reviews
+│   │   │   └── reservations
+│   │   ├── hot_station
+│   │   │   ├── barinov_order
+│   │   │   └── senya_task
+│   │   ├── menu_draft
+│   │   ├── shift_plan
+│   │   └── team_tasks
+│   └── office
+│       ├── candidate_max
+│       ├── owner_message
+│       └── vika_schedule
+├── first_shift
+├── guest_zone -> claude_monet/hall
+└── locker_room
+    ├── first_menu -> ../claude_monet/kitchen/menu_draft
+    ├── leva_note
+    └── max_resume
+
+10 directories, 17 files
+vscode ➜ ~/lab0 (master) $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first_shift
+        deleted:    nagiev_message
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        claude_monet/kitchen/hall_backup/
+        claude_monet/kitchen/shift_plan
+        claude_monet/kitchen/team_tasks
+        claude_monet/office/candidate_max
+        claude_monet/office/owner_message
+        guest_zone
+        locker_room/first_menu
+
+no changes added to commit (use "git add" and/or "git commit -a")
+vscode ➜ ~/lab0 (master) $ git add .
+vscode ➜ ~/lab0 (master) $ git commit -m "Копирование, перемещение и создание ссылок"
+[master 23a307c] Копирование, перемещение и создание ссылок
+ 9 files changed, 28 insertions(+)
+ create mode 100644 claude_monet/kitchen/hall_backup/guest_reviews
+ create mode 100644 claude_monet/kitchen/hall_backup/reservations
+ create mode 100644 claude_monet/kitchen/shift_plan
+ create mode 100644 claude_monet/kitchen/team_tasks
+ create mode 100644 claude_monet/office/candidate_max
+ rename nagiev_message => claude_monet/office/owner_message (100%)
+ create mode 120000 guest_zone
+ create mode 120000 locker_room/first_menu
+vscode ➜ ~/lab0 (master) $ git push
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 1.43 KiB | 1.43 MiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MihailAhmetgareev/Lab1Arh.git
+   c5414cb..23a307c  master -> master
+vscode ➜ ~/lab0 (master) $ ls -lR | grep '^-' | sort -k5,5nr | head -n 5
+-rw-r--r-- 2 vscode vscode  388 Sep 30 17:28 first_shift
+-rw-r--r-- 2 vscode vscode  388 Sep 30 17:28 shift_plan
+-rw-r--r-- 1 vscode vscode  366 Sep 30 17:26 team_tasks
+-r--r--r-- 1 vscode vscode 335 Sep 30 17:07 guest_reviews
+-r--r--r-- 1 vscode vscode 335 Sep 30 17:23 guest_reviews
+vscode ➜ ~/lab0 (master) $ grep -Rhi 'макс' . | grep -vi 'отчёт' | sort -r | head -n 4
+Новый повар Макс показался гостям растерянным
+Новый повар Макс показался гостям растерянным
+Новый повар Макс показался гостям растерянным
+Новое блюдо Макса отправлено на доработку
+vscode ➜ ~/lab0 (master) $ grep -iE 'блюд|продукт' claude_monet/kitchen/hot_station/*_task claude_monet/kitchen/cold_station/*_task | sort | wc -w
+14
+vscode ➜ ~/lab0 (master) $ ls -lR | grep '^-' | grep -E '^.{10} 2 ' | sort -r -k9,9
+-rw-r--r-- 2 vscode vscode  388 Sep 30 17:28 shift_plan
+-rw-r--r-- 2 vscode vscode  388 Sep 30 17:28 first_shift
+vscode ➜ ~/lab0 (master) $ (head -n 1 claude_monet/kitchen/hot_station/*; tail -n 1 claude_monet/kitchen/hot_station/*) | grep -v '==>' | sort
+
+
+Макса к плите без разрешения не подпускать
+Перед закрытием проверить остатки
+Подготовить горячий цех к вечерней смене
+Сеня отвечает за мясные блюда
+vscode ➜ ~/lab0 (master) $ grep -i 'гост' claude_monet/hall/guest_reviews | grep -vi 'постоянн' | sort -r | head -n 2
+Один гость слишком долго ждал горячее блюдо
+Новый повар Макс показался гостям растерянным
+vscode ➜ ~/lab0 (master) $ grep -Ril 'гост' claude_monet/kitchen/hall_backup | wc -l
+2
+vscode ➜ ~/lab0 (master) $ rm locker_room/max_resume
+vscode ➜ ~/lab0 (master) $ rm locker_room/first_menu
+vscode ➜ ~/lab0 (master) $ rm guest_zone
+vscode ➜ ~/lab0 (master) $ rm first_shift
+vscode ➜ ~/lab0 (master) $ rm claude_monet/kitchen/shift_plan
+vscode ➜ ~/lab0 (master) $ rmdir claude_monet/kitchen/cold_station
+rmdir: failed to remove 'claude_monet/kitchen/cold_station': Directory not empty
+vscode ➜ ~/lab0 (master) $ rm claude_monet/kitchen/cold_station/fedya_task
+vscode ➜ ~/lab0 (master) $ rmdir claude_monet/kitchen/cold_station
+vscode ➜ ~/lab0 (master) $ rm -r claude_monet/kitchen/hall_backup
+rm: remove write-protected regular file 'claude_monet/kitchen/hall_backup/guest_reviews'? 
+rm: cannot remove 'claude_monet/kitchen/hall_backup': Directory not empty
+vscode ➜ ~/lab0 (master) $ rm -r claude_monet/kitchen/hall_backup
+rm: remove write-protected regular file 'claude_monet/kitchen/hall_backup/guest_reviews'? y
+vscode ➜ ~/lab0 (master) $ tree
+.
+├── claude_monet
+│   ├── hall
+│   │   ├── guest_reviews
+│   │   └── reservations
+│   ├── kitchen
+│   │   ├── hot_station
+│   │   │   ├── barinov_order
+│   │   │   └── senya_task
+│   │   ├── menu_draft
+│   │   └── team_tasks
+│   └── office
+│       ├── candidate_max
+│       ├── owner_message
+│       └── vika_schedule
+└── locker_room
+    └── leva_note
+
+7 directories, 10 files
+vscode ➜ ~/lab0 (master) $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    claude_monet/kitchen/cold_station/fedya_task
+        deleted:    claude_monet/kitchen/hall_backup/guest_reviews
+        deleted:    claude_monet/kitchen/hall_backup/reservations
+        deleted:    claude_monet/kitchen/shift_plan
+        deleted:    first_shift
+        deleted:    guest_zone
+        deleted:    locker_room/first_menu
+        deleted:    locker_room/max_resume
+
+no changes added to commit (use "git add" and/or "git commit -a")
+vscode ➜ ~/lab0 (master) $ git add .
+vscode ➜ ~/lab0 (master) $ git push
+Everything up-to-date
+vscode ➜ ~/lab0 (master) $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    claude_monet/kitchen/cold_station/fedya_task
+        deleted:    claude_monet/kitchen/hall_backup/guest_reviews
+        deleted:    claude_monet/kitchen/hall_backup/reservations
+        deleted:    claude_monet/kitchen/shift_plan
+        deleted:    first_shift
+        deleted:    guest_zone
+        deleted:    locker_room/first_menu
+        deleted:    locker_room/max_resume
+
+vscode ➜ ~/lab0 (master) $ git add .
+vscode ➜ ~/lab0 (master) $ git commit -m "Поиск, фильтрация, обработка данных и удаление всего"
+[master a924595] Поиск, фильтрация, обработка данных и удаление всего
+ 8 files changed, 28 deletions(-)
+ delete mode 100644 claude_monet/kitchen/cold_station/fedya_task
+ delete mode 100644 claude_monet/kitchen/hall_backup/guest_reviews
+ delete mode 100644 claude_monet/kitchen/hall_backup/reservations
+ delete mode 100644 claude_monet/kitchen/shift_plan
+ delete mode 100644 first_shift
+ delete mode 120000 guest_zone
+ delete mode 120000 locker_room/first_menu
+ delete mode 100644 locker_room/max_resume
+vscode ➜ ~/lab0 (master) $ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 545 bytes | 545.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MihailAhmetgareev/Lab1Arh.git
+   23a307c..a924595  master -> master
+vscode ➜ ~/lab0 (master) $ 
